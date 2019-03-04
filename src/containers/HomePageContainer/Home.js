@@ -16,7 +16,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        this.props.dispatch(fetchProducts(1));
+        this.props.dispatch(fetchProducts());
     }
 
     renderImages = () => {
