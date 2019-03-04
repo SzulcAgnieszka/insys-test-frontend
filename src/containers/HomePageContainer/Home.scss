@@ -1,0 +1,67 @@
+//COLOR VARIABLES
+$color-main: #7AD6BB;
+$font-color: #F8F8F8;
+$font-color-transparent: rgba(248,248,248, .5);
+
+.background {
+    height: 250px;
+    background-image: url("./background.jpg");
+    background-position: center;
+    border-bottom: solid 1px #ffffff;
+}
+
+.navigation {
+    background-color: $color-main;
+    justify-content: flex-end;
+
+    a {
+        margin: 5px !important;
+        color: $font-color;
+        transition: all .2s ease-in-out;
+        
+        &.active, &:hover, &:active, &:focus, &:visited {
+            background-color: transparent !important;
+            border: solid 1px $font-color;
+            border-radius: 100%;
+            color: $font-color !important;
+            }
+    }
+}
+
+.logo {
+    margin-top: 10rem;;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 9;
+    width: 150px;
+    background-color: $font-color-transparent;
+    border: solid 1px $font-color-transparent;
+}
+    
+
+.image {
+    cursor: pointer;
+    box-shadow: 3px 3px 7px #c7c9cc;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 5px 5px 10px #adafb1;
+    }
+}
+
+.quote {
+    margin: 20px;
+    border-left: solid 5px $color-main;
+    font-style: oblique;
+    color: 	#C8C8C8;
+}
+
+.location {
+    margin-top: 0 !important;
+
+    svg {
+        margin-right: 0.25rem;
+    }
+}
